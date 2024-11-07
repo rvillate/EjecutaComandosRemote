@@ -1,0 +1,12 @@
+Nombre Tabla: ReportesYHerramientas_202207042053
+
+CREATE TABLE `databasederaul`.`ReportesYHerramientas_202207042053` (`id` INT NOT NULL AUTO_INCREMENT , `estado` TEXT NOT NULL , `solicitud` TEXT NOT NULL , `hora_solicitud` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `argumentos_1` TEXT NOT NULL , `argumentos_2` TEXT NOT NULL , `argumentos_3` TEXT NOT NULL , `log_estado` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_spanish_ci COMMENT = 'Aqui se guardan los registros o solicitudes a la app';
+
+Insertar registro: INSERT INTO `ReportesYHerramientas_202207042053` (`id`, `estado`, `solicitud`, `hora_solicitud`, `argumentos_1`, `argumentos_2`, `argumentos_3`, `log_estado`) VALUES (NULL, 'Pendiente', 'Reporte de Calces Individuales', CURRENT_TIMESTAMP, '', '', '', '')
+
+UPDATE `ReportesYHerramientas_202207042053` SET `id`='[value-1]',`estado`='[value-2]',`solicitud`='[value-3]',`hora_solicitud`='[value-4]',`argumentos_1`='[value-5]',`argumentos_2`='[value-6]',`argumentos_3`='[value-7]',`log_estado`='[value-8]' WHERE 1
+
+INSERT INTO `ReportesYHerramientas_202207042053`(`id`, `estado`, `solicitud`, `hora_solicitud`, `argumentos_1`, `argumentos_2`, `argumentos_3`, `log_estado`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]')
+
+SELECT `id`, `estado`, `solicitud`, `hora_solicitud`, `argumentos_1`, `argumentos_2`, `argumentos_3`, `log_estado` FROM `ReportesYHerramientas_202207042053` WHERE 1
+

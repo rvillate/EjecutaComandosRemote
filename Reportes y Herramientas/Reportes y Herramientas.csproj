@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Reportes_y_Herramientas</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>bin\Debug\netcoreapp3.1\imgs\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="carga-verde.gif" />
+    <None Remove="Sources\anims\button\1\AnimButton1.html" />
+    <None Remove="Sources\anims\button\1\AnimButton1.js" />
+    <None Remove="Sources\anims\button\1\images\AnimButton1_atlas_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\imgs\Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sources\anims\button\1\images\AnimButton1_atlas_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="carga-verde.gif" />
+    <Resource Include="Sources\anims\button\1\AnimButton1.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sources\anims\button\1\AnimButton1.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Programs\" />
+  </ItemGroup>
+
+</Project>
