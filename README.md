@@ -1,4 +1,5 @@
 # Aplicación WPF para Control de Tareas en Base de Datos MySQL
+![image](https://github.com/user-attachments/assets/da25d164-76bd-4363-8e07-b01b1b49501e)
 
 ## Descripción
 Esta aplicación WPF interactúa con una base de datos MySQL para gestionar tareas pendientes. Dependiendo de una variable de configuración, la aplicación puede ser visible o no. Su propósito principal es conectar a la base de datos, leer registros de tareas pendientes y ejecutarlas si están marcadas como "Corriendo" o "Pendiente". Además, muestra mensajes en pantalla y ejecuta archivos CMD relacionados con las tareas.
