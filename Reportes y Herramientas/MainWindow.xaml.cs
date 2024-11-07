@@ -96,7 +96,7 @@ namespace Reportes_y_Herramientas
                 status_color_DB.Fill = (SolidColorBrush)new BrushConverter().ConvertFrom("#FFBD00");
                 await Task.Run(() =>
                {
-                   con = MyDBSQL.ConectarDB("85.10.205.173", 3306, "databasederaul", "userderaul", "PassDeRaul1-");
+                   con = MyDBSQL.ConectarDB("host", port, "database", "user", "pass");
                });
                 if (con.State == System.Data.ConnectionState.Open && bandera1Stoped == true)
                 {
@@ -115,7 +115,7 @@ namespace Reportes_y_Herramientas
 
                             if (con.State != System.Data.ConnectionState.Open)
                             {
-                                con = MyDBSQL.ConectarDB("85.10.205.173", 3306, "databasederaul", "userderaul", "PassDeRaul1-");
+                                con = MyDBSQL.ConectarDB("host", port, "database", "user", "pass");
 
                                 if (con.State == System.Data.ConnectionState.Open)
                                 {
